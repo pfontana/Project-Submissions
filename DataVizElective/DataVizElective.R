@@ -1,0 +1,12 @@
+library('Hmisc')
+library('ggplot2')
+library('wantmod')
+library('quantmod')
+library('psych')
+library(gridExtra)
+library(dplyr)
+library(alr3)
+pf<-read.csv('t_hohenpeissenberg_200306.csv')
+names(pf)
+
+ggplot(aes(x=YEAR,y=ANN),data=pf)+geom_point()
